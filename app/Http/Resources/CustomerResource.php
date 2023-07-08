@@ -15,5 +15,8 @@ class CustomerResource extends JsonResource
     public function toArray(Request $request): array
     {
         return parent::toArray($request);
+        // return [
+        //     'Tên khách hàng' => $this->name_customer, // Chọn dữ liệu được trả về
+        // ];
     }
 }
