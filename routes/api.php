@@ -19,5 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('customer',CustomerController::class);
+Route::resource('customer',CustomerController::class)->only(['index','show','update','delete','store']);
 
